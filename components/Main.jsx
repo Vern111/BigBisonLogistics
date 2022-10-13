@@ -10,7 +10,7 @@ const Main = () => {
 		<div className=' bg-hero bg-cover bg-center  '>
 			<div className='w-full   pt-40 lg:grid grid-cols-2 gap-4   '>
 				<div className='max-w-[1240]  w-full  px-6 md:pr-12'>
-					<h2 className='pb-3 text-center text-gray-400 md:pl-6'>
+					<h2 className='pb-3 text-center text-gray-200 md:pl-6'>
 						Always Adapting
 					</h2>
 					<p className='py-4 pl-16 text-[#F7F7F7] max-w-[100%] m-auto'>
@@ -57,7 +57,7 @@ const Main = () => {
 				alt='/'
 				layout='responsive'
 				width='100%'
-				height='35%'
+				height='20%'
 				quality={100}
 			/>
 		</div>
