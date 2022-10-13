@@ -9,8 +9,10 @@ const Main = () => {
 		//Background div
 		<div className=' container  '>
 			<div className=' row d-flex place-items-center '>
-				<div class=' ml-16 grid h-full   sm:grid-cols-3 sm:grid-rows-[min-content,1fr]'>
-					<div class='order-first m-2  sm:order-none sm:col-span-2'></div>
+				<div class=' ml-16 grid h-full   md:grid-cols-3 sm:grid-cols-1 sm:grid-rows-[min-content,1fr]'>
+					{/* <div class='order-first m-2  sm:order-none sm:col-span-2'>
+						
+					</div> */}
 
 					<div class=' m-2 mr-36 sm:col-span-2'>
 						<div>
@@ -42,31 +44,19 @@ const Main = () => {
 							<div className=' pt-6 text-center '>
 								<button className='w-[50%] h-[55px] '>
 									{' '}
-									Request Risk Assessment{' '}
+									Learn More{' '}
 								</button>
 							</div>
 						</div>
 					</div>
-					<div class='text-center  sm:row-span-2 m-2'>
+					<div class='text-center sm:hidden sm:row-span-2 ml-2 pt-24'>
 						<div className='lg:visible md:visible sm:invisible'>
 							<Image
 								src='/../public/assets/about.png'
-								width='600'
-								height='665'
+								width='300%'
+								height='430%'
 								alt='About image'
 							/>
-						</div>
-					</div>
-				</div>
-
-				<div class='about-content'>
-					<div class='about-content-text'></div>
-				</div>
-				<div class='col-lg-5 offset-lg-1 col-md-12 col-sm-12'>
-					<div class='about-image'>
-						<div class='years-design'>
-							<h2>20+</h2>
-							<h5>Years Experience</h5>
 						</div>
 					</div>
 				</div>
