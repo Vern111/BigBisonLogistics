@@ -21,7 +21,7 @@ const Main = () => {
 							</h2>
 
 							<br />
-							<p className='text-gray-100'>
+							<p className='text-btext'>
 								Big Bison exists to solve complex problems. We
 								believe some of the most difficult problems in
 								an individual's life occur when they become

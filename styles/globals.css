@@ -32,7 +32,7 @@ html {
 	}
 
 	li {
-		@apply cursor-pointer;
+		@apply cursor-pointer text-xs font-bold;
 	}
 
 	p {

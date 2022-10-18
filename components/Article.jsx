@@ -34,7 +34,7 @@ export const Article = () => {
 							/>
 						</div>
 						<div className=' pt-6 pl-4 text-center '>
-							<p className='text-center text-sm text-gray-100'>
+							<p className='text-center text-sm text-btext'>
 								A veteran of the $48.1 billion industry tells what it's like protection the rich and famous.
 							</p>
 							<button className='w-[25vw] h-[55px] '>
