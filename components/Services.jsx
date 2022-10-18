@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const Services = () => {
+const services = () => {
 	return (
 		<div class=' place-items-center m-12 grid h-full lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 sm:grid-rows-[min-content,1fr]'>
 			<div class=' w-[42vw] text sm:col-span-1'>
@@ -54,4 +55,4 @@ const Services = () => {
 		</div>
 	);
 };
-export default Services;
+export default services;

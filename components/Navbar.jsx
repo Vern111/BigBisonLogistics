@@ -59,7 +59,9 @@ const Navbar = () => {
 							<Link href='/'>Home</Link>
 						</li>
 						<li className='ml-4 text-md  hover:border-b'>
-							<Link href='/#about'>About Us</Link>
+							<Link href='/#about'>
+								About Us
+							</Link>
 						</li>
 						<li className='ml-4 text-md  hover:border-b'>
 							<Link href='/#skills'>Services</Link>
