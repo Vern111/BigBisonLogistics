@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const Article = () => {
 	return (
 		// <div className='bg-black opacity-75 '></div>
-		<div className=' bg-luckbox bg-cover bg-center   '>
+		<div id='article' className=' bg-luckbox bg-cover bg-center   '>
 			<div className=' z-10 row d-flex place-items-center pt-2'>
 				<div class=' mx-24 grid h-full    sm:grid-cols-1 sm:grid-rows-[min-content,1fr]'>
 					<div class=' pt-16  sm:col-span-2 '>

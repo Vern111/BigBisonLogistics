@@ -9,7 +9,9 @@ const about = () => {
 	return (
 		//Background div
 
-		<div class=' place-items-center m-12 grid h-full lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 sm:grid-rows-[min-content,1fr]'>
+		<div
+			id='about'
+			class=' place-items-center m-12 grid h-full lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 sm:grid-rows-[min-content,1fr]'>
 			<div class='  sm:col-span-1'>
 				<h6 className='pb-2  uppercase text-title '>About BBLGX</h6>
 				<h4 className='pb-2  font-black font-sans text-title  '>

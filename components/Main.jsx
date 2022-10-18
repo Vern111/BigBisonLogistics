@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 const Main = () => {
 	return (
 		//Background div
-		<div className=' bg-hero bg-cover bg-center   '>
+		<div id='home' className=' bg-hero bg-cover bg-center   '>
 			<div className=' row d-flex place-items-center pt-32'>
 				<div class=' mx-24 grid h-full   md:grid-cols-3 sm:grid-cols-1 sm:grid-rows-[min-content,1fr]'>
 					{/* <div class='order-first m-2  sm:order-none sm:col-span-2'>

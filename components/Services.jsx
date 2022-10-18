@@ -4,7 +4,9 @@ import Link from 'next/link';
 
 const services = () => {
 	return (
-		<div class=' place-items-center m-12 grid h-full lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 sm:grid-rows-[min-content,1fr]'>
+		<div
+			id='services'
+			class=' place-items-center m-12 grid h-full lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 sm:grid-rows-[min-content,1fr]'>
 			<div class=' w-[42vw] text sm:col-span-1'>
 				<h6 className='pb-2 text-xs uppercase text-gold '>
 					Some of our services

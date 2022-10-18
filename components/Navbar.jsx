@@ -64,7 +64,7 @@ const Navbar = () => {
 							</Link>
 						</li>
 						<li className='ml-4 text-md  hover:border-b'>
-							<Link href='/#skills'>Services</Link>
+							<Link href='/#services'>Services</Link>
 						</li>
 
 						<li className='ml-4 text-md  hover:border-b'>
