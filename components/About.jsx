@@ -42,6 +42,7 @@ const About = () => {
 						width='500vw'
 						height='500vw'
 						alt='About image'
+						quality={100}
 					/>
 				</div>
 			</div>

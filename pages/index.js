@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Main from '../components/Main'
 import About from '../components/About'
+import { Article } from '../components/Article'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Main />
       <About />
+      <Article />
     </div>
   )
 }

@@ -10,6 +10,7 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				hero: "url('../public/assets/hero.jpg')",
+				luckbox: "url('../public/assets/luckboxdim.png')",
 			},
 			fontFamily: {
 				sans: ['Oswald', ...defaultTheme.fontFamily.sans],
