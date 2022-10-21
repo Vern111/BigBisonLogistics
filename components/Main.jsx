@@ -14,14 +14,14 @@ const Main = () => {
 						
 					</div> */}
 
-					<div class=' pt-16 mr-36 sm:col-span-2 '>
+					<div class=' pt-16 mr-6 sm:col-span-2 '>
 						<div>
 							<h2 className='pb-3   text-gray-100 '>
 								Always Adapting
 							</h2>
 
 							<br />
-							<p className='text-btext'>
+							<p className='text-btext max-w-md'>
 								Big Bison exists to solve complex problems. We
 								believe some of the most difficult problems in
 								an individual's life occur when they become
