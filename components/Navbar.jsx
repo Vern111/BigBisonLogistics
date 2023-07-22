@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/logo-stacked2-white.png';
+import useScroll from '../lib/hooks/use-scroll';
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
@@ -14,18 +15,8 @@ const Navbar = () => {
 	const [linkColor, setLinkColor] = useState('#ecf0f3');
 	const [position, setPosition] = useState('fixed');
 
-	useEffect(() => {
-		const handleColor = () => {
-			if (window.scrollY >= 90) {
-				setNavBg('white');
-				setLinkColor('#1f2937');
-			} else {
-				setNavBg('transparent');
-				setLinkColor('#ecf0f3');
-			}
-		};
-		window.addEventListener('scroll', handleColor);
-	}, []);
+	
+	const scrolled = useScroll(50);
 
 	const handleNav = () => {
 		setNav(!nav);
@@ -33,12 +24,11 @@ const Navbar = () => {
 
 	return (
 		<div
-			style={{ backgroundColor: `${navBg}` }}
-			className={
-				shadow
-					? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
-					: 'fixed w-full h-20 z-[100]'
-			}>
+			className={`fixed top-0 w-full py-2 flex justify-center ${
+				scrolled
+					? 'border-b border-gray-200 bg-white/50 backdrop-blur-xl'
+					: 'bg-white/0'
+			} z-30 transition-all`}>
 			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
 				<Link href='/'>
 					<a className='pl-6 '>
@@ -59,9 +49,7 @@ const Navbar = () => {
 							<Link href='/'>Home</Link>
 						</li>
 						<li className='ml-4 text-md  hover:border-b'>
-							<Link href='/#about'>
-								About Us
-							</Link>
+							<Link href='/#about'>About Us</Link>
 						</li>
 						<li className='ml-4 text-md  hover:border-b'>
 							<Link href='/#services'>Services</Link>
@@ -84,9 +72,7 @@ const Navbar = () => {
 			{/* Mobile Menu */}
 			{/* Overlay */}
 			<div
-				className={
-					nav ? 'md:hidden fixed left-0 top-0 w-full h-screen' : ''
-				}>
+				className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen' : ''}>
 				{/* Side Drawer Menu */}
 				<div
 					className={
@@ -114,39 +100,29 @@ const Navbar = () => {
 							</div>
 						</div>
 						<div className='border-b border-gray-300 my-4'>
-							<p className='w-[85%] md:w-[90%] py-2'>
-								Let&#39;s work together
-							</p>
+							<p className='w-[85%] md:w-[90%] py-2'>Let&#39;s work together</p>
 						</div>
 					</div>
 					<div className='py-4 flex flex-col'>
 						<ul className=''>
 							<Link href='/'>
-								<li
-									onClick={() => setNav(false)}
-									className='py-4 text-3xl'>
+								<li onClick={() => setNav(false)} className='py-4 text-3xl'>
 									Home
 								</li>
 							</Link>
 							<Link href='/#about'>
-								<li
-									onClick={() => setNav(false)}
-									className='py-4 text-3xl'>
+								<li onClick={() => setNav(false)} className='py-4 text-3xl'>
 									About Us
 								</li>
 							</Link>
 							<Link href='/#skills'>
-								<li
-									onClick={() => setNav(false)}
-									className='py-4 text-3xl'>
+								<li onClick={() => setNav(false)} className='py-4 text-3xl'>
 									Services
 								</li>
 							</Link>
 
 							<Link href='/#contact'>
-								<li
-									onClick={() => setNav(false)}
-									className='py-4 text-3xl'>
+								<li onClick={() => setNav(false)} className='py-4 text-3xl'>
 									Contact
 								</li>
 							</Link>
