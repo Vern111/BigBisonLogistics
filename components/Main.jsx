@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import Wave from '../public/assets/home-wave.png'
 
 const Main = () => {
 	return (
@@ -52,12 +53,12 @@ const Main = () => {
 			</div>
 			<Image
 				class=" pt-0 invisible sm:visible "
-				src="/../public/assets/home-bottom-shape.png"
+				src={Wave}
 				alt="/"
 				layout="responsive"
 				width="100%"
 				height="20%"
-				quality={100}
+				
 			/>
 		</div>
 	)
