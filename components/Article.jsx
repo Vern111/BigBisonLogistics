@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import luckbox from '../public/assets/luckbox.png'
 
 export const Article = () => {
 	return (
@@ -27,7 +28,7 @@ export const Article = () => {
 						<div className="">
 							<Image
 								class=" "
-								src="/../public/assets/luckbox.png"
+								src={luckbox}
 								alt="/"
 								width="400px"
 								height="450px"
