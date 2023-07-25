@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import aboutimage from '../public/assets/about.png'
 
 const about = () => {
 	return (
@@ -40,11 +41,11 @@ const about = () => {
 			<div class=" sm:row-span-2 mt-6">
 				<div className="">
 					<Image
-						src="/../public/assets/about.png"
+						src={aboutimage}
 						width="500vw"
 						height="500vw"
 						alt="About image"
-						quality={100}
+						
 					/>
 				</div>
 			</div>

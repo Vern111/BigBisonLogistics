@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import servicesimage from '../public/assets/services.jpeg'
 
 const services = () => {
 	return (
@@ -47,7 +48,7 @@ const services = () => {
 			<div class=" sm:row-span-2 mt-6">
 				<div className="">
 					<Image
-						src="/../public/assets/services.jpeg"
+						src={servicesimage}
 						width="500vw"
 						height="500vw"
 						alt="About image"
