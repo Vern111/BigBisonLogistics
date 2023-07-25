@@ -4,7 +4,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import Wave from '../public/assets/home-wave.png'
-import bison from '../public/assets/whiteGold_bison.png'
+import bison from '../public/assets/logo-stacked2.png'
 
 const Main = () => {
 	return (
