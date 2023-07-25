@@ -22,7 +22,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<div
+        <div
 			className={`fixed top-0 w-full py-2 flex justify-center ${
 				scrolled
 					? 'border-b border-gray-200 bg-white/50 backdrop-blur-xl'
@@ -30,17 +30,17 @@ const Navbar = () => {
 			} z-30 transition-all`}
 		>
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-				<Link href="/">
-					<a className="pl-6 ">
-						<Image
-							src={NavLogo}
-							alt="/"
-							width="175"
-							height="50"
-							className="cursor-pointer"
-						/>
-					</a>
-				</Link>
+				<Link href="/" className="pl-6 ">
+
+                    <Image
+                        src={NavLogo}
+                        alt="/"
+                        width="175"
+                        height="50"
+                        className="cursor-pointer"
+                    />
+
+                </Link>
 				<div>
 					<ul
 						style={{ color: `${linkColor}` }}
@@ -87,16 +87,16 @@ const Navbar = () => {
 					<div>
 						<div className="flex w-full items-center justify-between">
 							<Link href="/">
-								<a>
-									<Image
-										src="/../public/assets/WhiteGold_logistics.png"
-										width="100%"
-										height="90%"
-										alt="/"
-										quality={100}
-									/>
-								</a>
-							</Link>
+
+                                <Image
+                                    src="/../public/assets/WhiteGold_logistics.png"
+                                    width="100%"
+                                    height="90%"
+                                    alt="/"
+                                    quality={100}
+                                />
+
+                            </Link>
 							<div
 								onClick={handleNav}
 								className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer"
@@ -110,23 +110,23 @@ const Navbar = () => {
 					</div>
 					<div className="py-4 flex flex-col">
 						<ul className="">
-							<Link href="/">
+							<Link href="/" legacyBehavior>
 								<li onClick={() => setNav(false)} className="py-4 text-3xl">
 									Home
 								</li>
 							</Link>
-							<Link href="/#about">
+							<Link href="/#about" legacyBehavior>
 								<li onClick={() => setNav(false)} className="py-4 text-3xl">
 									About Us
 								</li>
 							</Link>
-							<Link href="/#skills">
+							<Link href="/#skills" legacyBehavior>
 								<li onClick={() => setNav(false)} className="py-4 text-3xl">
 									Services
 								</li>
 							</Link>
 
-							<Link href="/#contact">
+							<Link href="/#contact" legacyBehavior>
 								<li onClick={() => setNav(false)} className="py-4 text-3xl">
 									Contact
 								</li>
@@ -136,7 +136,7 @@ const Navbar = () => {
 				</div>
 			</div>
 		</div>
-	)
+    );
 }
 
 export default Navbar
