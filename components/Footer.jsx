@@ -4,6 +4,7 @@ import { FaInstagram } from 'react-icons/fa'
 import { FaTwitter } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaYoutube } from 'react-icons/fa'
+import ghostfoot from '../public/assets/ghostfoot.PNG'
 
 export const Footer = () => {
 	return (
@@ -26,7 +27,7 @@ export const Footer = () => {
 						<div className="">
 							<Image
 								class=" "
-								src="/../public/assets/ghostfoot.PNG"
+								src={ghostfoot}
 								alt="/"
 								width="200%"
 								height="100%"

@@ -4,6 +4,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import Wave from '../public/assets/home-wave.png'
+import bison from '../public/assets/whiteGold_bison.png'
 
 const Main = () => {
 	return (
@@ -35,7 +36,7 @@ const Main = () => {
 						<div className="">
 							<Image
 								class=" "
-								src="/../public/assets/whiteGold_bison.png"
+								src={bison}
 								alt="/"
 								width="450px"
 								height="400px"
