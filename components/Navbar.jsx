@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router'
-import NavLogo from '../public/assets/logo-stacked2-white.png'
+import NavLogo from '../public/assets/logo-stacked2.png'
 import useScroll from '../lib/hooks/use-scroll'
 
 const Navbar = () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
 	}
 
 	return (
-        <div
+		<div
 			className={`fixed top-0 w-full py-2 flex justify-center ${
 				scrolled
 					? 'border-b border-gray-200 bg-white/50 backdrop-blur-xl'
@@ -31,16 +31,14 @@ const Navbar = () => {
 		>
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
 				<Link href="/" className="pl-6 ">
-
-                    <Image
-                        src={NavLogo}
-                        alt="/"
-                        width="175"
-                        height="50"
-                        className="cursor-pointer"
-                    />
-
-                </Link>
+					<Image
+						src={NavLogo}
+						alt="/"
+						width="175"
+						height="50"
+						className="cursor-pointer"
+					/>
+				</Link>
 				<div>
 					<ul
 						style={{ color: `${linkColor}` }}
@@ -74,7 +72,9 @@ const Navbar = () => {
 			{/* Mobile Menu */}
 			{/* Overlay */}
 			<div
-				className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen' : ''}
+				className={
+					nav ? 'md:hidden fixed left-0 top-0 w-full h-screen' : ''
+				}
 			>
 				{/* Side Drawer Menu */}
 				<div
@@ -87,16 +87,14 @@ const Navbar = () => {
 					<div>
 						<div className="flex w-full items-center justify-between">
 							<Link href="/">
-
-                                <Image
-                                    src="/../public/assets/WhiteGold_logistics.png"
-                                    width="100%"
-                                    height="90%"
-                                    alt="/"
-                                    quality={100}
-                                />
-
-                            </Link>
+								<Image
+									src="/../public/assets/WhiteGold_logistics.png"
+									width="100%"
+									height="90%"
+									alt="/"
+									quality={100}
+								/>
+							</Link>
 							<div
 								onClick={handleNav}
 								className="rounded-full shadow-md shadow-gray-600 p-3 cursor-pointer"
@@ -105,29 +103,43 @@ const Navbar = () => {
 							</div>
 						</div>
 						<div className="border-b border-gray-300 my-4">
-							<p className="w-[85%] md:w-[90%] py-2">Let&#39;s work together</p>
+							<p className="w-[85%] md:w-[90%] py-2">
+								Let&#39;s work together
+							</p>
 						</div>
 					</div>
 					<div className="py-4 flex flex-col">
 						<ul className="">
 							<Link href="/" legacyBehavior>
-								<li onClick={() => setNav(false)} className="py-4 text-3xl">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 text-3xl"
+								>
 									Home
 								</li>
 							</Link>
 							<Link href="/#about" legacyBehavior>
-								<li onClick={() => setNav(false)} className="py-4 text-3xl">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 text-3xl"
+								>
 									About Us
 								</li>
 							</Link>
 							<Link href="/#skills" legacyBehavior>
-								<li onClick={() => setNav(false)} className="py-4 text-3xl">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 text-3xl"
+								>
 									Services
 								</li>
 							</Link>
 
 							<Link href="/#contact" legacyBehavior>
-								<li onClick={() => setNav(false)} className="py-4 text-3xl">
+								<li
+									onClick={() => setNav(false)}
+									className="py-4 text-3xl"
+								>
 									Contact
 								</li>
 							</Link>
@@ -136,7 +148,7 @@ const Navbar = () => {
 				</div>
 			</div>
 		</div>
-    );
+	)
 }
 
 export default Navbar
